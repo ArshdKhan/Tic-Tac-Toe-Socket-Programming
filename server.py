@@ -143,11 +143,11 @@ def start_game():
     send_common_msg("Over")
 
     if result == 1:
-        last_msg = "Player One is the winner!!"
+        last_msg = "Player One is the winner!"
     elif result == 2:
-        last_msg = "Player Two is the winner!!"
+        last_msg = "Player Two is the winner!"
     else:
-        last_msg = "Draw game!! Try again later!"
+        last_msg = "Draw game! Try again later!"
 
     send_common_msg(last_msg)
     for conn in player_connections:
