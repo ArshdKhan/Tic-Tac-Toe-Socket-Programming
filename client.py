@@ -44,7 +44,7 @@ height = 550
 screen = pygame.display.set_mode((width, height))
 
 # Set title
-pygame.display.set_caption("Tic Tac Toe")
+pygame.display.set_caption("Tic-Tac-Toe")
 
 # Set icon
 icon = pygame.image.load("tictactoe.png")
