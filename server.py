@@ -37,10 +37,10 @@ def validate_input(x, y, conn):
 
 def get_input(current_player):
     if current_player == player_one:
-        player_turn_msg = "Player One's Turn"
+        player_turn_msg = "  Player One's Turn"
         conn = player_connections[0]
     else:
-        player_turn_msg = "Player Two's Turn"
+        player_turn_msg = "  Player Two's Turn"
         conn = player_connections[1]
     print(player_turn_msg)
     send_common_msg(player_turn_msg)

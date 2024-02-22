@@ -44,15 +44,15 @@ height = 550
 screen = pygame.display.set_mode((width, height))
 
 # Set title
-pygame.display.set_caption("Tic-Tac-Toe")
+pygame.display.set_caption("Tic Tac Toe")
 
 # Set icon
 icon = pygame.image.load("tictactoe.png")
 pygame.display.set_icon(icon)
 
 # Fonts
-big_font = pygame.font.Font('freesansbold.ttf', 64)
-small_font = pygame.font.Font('freesansbold.ttf', 32)
+big_font = pygame.font.Font('DK Lemon Yellow Sun.otf', 64)
+small_font = pygame.font.Font('Crunch Chips.otf', 32)
 background_color = (31, 31, 31)  # Dark background color
 title_color = (255, 255, 255)  # White text color
 subtitle_color = (203, 195, 227)
@@ -72,7 +72,7 @@ def build_screen(bottom_msg, string, player_color=subtitle_color):
     pygame.draw.line(screen, line_color, (150, 250 - 2), (450, 250 - 2), 4)
     pygame.draw.line(screen, line_color, (150, 350 - 2), (450, 350 - 2), 4)
 
-    title = big_font.render("TIC TAC TOE", True, title_color)
+    title = big_font.render("   TIC-TAC-TOE", True, title_color)
     screen.blit(title, (110, 0))
     subtitle = small_font.render(str.upper(string), True, player_color)
     screen.blit(subtitle, (150, 70))
